@@ -1,11 +1,16 @@
 'use strict';
 
 const Hapi = require('@hapi/hapi');
+var config = require('./config');
+
+require('dotenv').config();
 
 const init = async () => {
 
+    const PORT = process.env.PORT || config.port;
+
     const server = Hapi.server({
-        port: 3000,
+        port: PORT,
         host: 'localhost'
     });
 

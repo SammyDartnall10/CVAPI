@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
+    "start": "export NODE_ENV=production; node index.js",
     "test": "lab -v **/*.test.js"
   },
   "repository": {
@@ -18,7 +19,8 @@
   },
   "homepage": "https://github.com/SammyDartnall10/CVAPI#readme",
   "dependencies": {
-    "@hapi/hapi": "^21.3.3"
+    "@hapi/hapi": "^21.3.3",
+    "dotenv": "^16.4.1"
   },
   "devDependencies": {
     "@hapi/code": "^9.0.3",
