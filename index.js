@@ -16,6 +16,15 @@ const init = async () => {
 
     server.route({
         method: 'GET',
+        path: '/',
+        handler: (request, h) => {
+
+            return 'Im alive!';
+        }
+    });
+
+    server.route({
+        method: 'GET',
         path: '/aboutme',
         handler: (request, h) => {
 
