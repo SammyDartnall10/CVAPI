@@ -48,7 +48,7 @@ const init = async () => {
         path: '/talktome',
         handler: (request, h) => {
 
-            return 'This will be where people can get in contact or give feedback';
+            return 'This will be where people can get in contact or give feedback :)';
         }
     });
 
