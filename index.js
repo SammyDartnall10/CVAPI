@@ -14,7 +14,7 @@ const init = async () => {
 
     server.route({
         method: 'GET',
-        path: '/',
+        path: 'api/v1/healthz',
         handler: (request, h) => {
 
             return 'Im alive!';
@@ -23,7 +23,7 @@ const init = async () => {
 
     server.route({
         method: 'GET',
-        path: '/aboutme',
+        path: 'api/v1/aboutme',
         handler: (request, h) => {
 
             return 'This is all about me';
@@ -32,7 +32,7 @@ const init = async () => {
 
     server.route({
         method: 'GET',
-        path: '/experience/{id}',
+        path: 'api/v1/experience/{id}',
         handler: (request, h) => {
 
             const id = request.params.id; 
@@ -43,7 +43,7 @@ const init = async () => {
 
     server.route({
         method: 'GET',
-        path: '/skills',
+        path: 'api/v1/skills',
         handler: (request, h) => {
 
             return 'This returns my skills and tech stack';
@@ -52,7 +52,7 @@ const init = async () => {
 
     server.route({
         method: 'POST',
-        path: '/talktome',
+        path: 'api/v1/talktome',
         handler: (request, h) => {
 
             return 'This will be where people can get in contact or give feedback :)';
